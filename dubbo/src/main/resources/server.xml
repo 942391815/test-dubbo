@@ -8,8 +8,9 @@
         " > 
 
     <dubbo:application name="hello-world-app" />
+    <dubbo:protocol name="dubbo" port="50639"/>
 <!--发布服务的地址-->  
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://10.12.0.29:2181" />
 <!--暴露出的接口-->  
     <dubbo:service interface="guava.IProcessData"
         ref= "demoService" executes ="10" /> 

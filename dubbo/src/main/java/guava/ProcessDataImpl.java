@@ -10,4 +10,9 @@ public class ProcessDataImpl implements IProcessData {
          }
           return "Finished:" + data;
     }
+
+    @Override
+    public String dealTwo(String data) {
+        return "dealTwo";
+    }
 }
